@@ -29,4 +29,14 @@ monasca_wait_for_period: 30
 monasca_log_level: WARN
 zookeeper_connection_timeout_ms: 1000000
 
-verify: True
+kafka_service_verify: True
+
+# moved from vars/main.yml
+kafka_conf_dir: /etc/kafka
+kafka_data_dir: /var/kafka
+kafka_group: kafka
+kafka_user: kafka
+kafka_log_dir: /var/log/kafka
+kafka_upstart_conf: /etc/init/kafka.conf
+kafka_systemd_service: /etc/systemd/system/kafka.service
+kafka_auto_create_topics: "false"
